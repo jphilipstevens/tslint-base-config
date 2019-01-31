@@ -1,14 +1,23 @@
 {
   "name": "@jphilipstevens/tslint-base-config",
-  "version": "0.0.0",
-  "main": "index.js",
+  "version": "0.0.0-semantic-release",
+  "main": "tslint.json",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jphilipstevens/tslint-base-config.git"
+  },
   "engines": {
     "node": ">8",
     "npm": ">=5.2"
   },
+  "files": [
+    "tslint.json"
+  ],
   "scripts": {
-    "commit": "npx git-cz"
+    "lint": "npx jsonlint tslint.json -q",
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
@@ -20,12 +29,14 @@
     "@semantic-release/github": "^5.0.6",
     "@semantic-release/npm": "^5.0.4",
     "@semantic-release/release-notes-generator": "^7.0.2",
+    "condition-circle": "^2.0.2",
     "cz-conventional-changelog": "^2.1.0",
     "semantic-release": "^15.9.17"
   },
   "peerDependencies": {
     "tslint": "^5.5.0",
+    "tslint-config-prettier": "^1.17.0",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-config-prettier": "^1.17.0"
+    "typescript": "^3.2.4"
   }
 }
