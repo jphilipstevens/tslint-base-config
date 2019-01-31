@@ -6,6 +6,7 @@ jobs:
   lint:
     <<: *defaults  
     steps:
+      - checkout
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}.
@@ -22,6 +23,7 @@ jobs:
   publish:
     <<: *defaults
     steps:
+      - checkout
       - run:
         name: Publish package
         command: npm run semantic-release || true
