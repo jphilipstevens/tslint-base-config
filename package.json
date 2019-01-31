@@ -1,6 +1,6 @@
 {
   "name": "@jphilipstevens/tslint-base-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "tslint.json",
   "license": "MIT",
   "repository": {
