@@ -1,6 +1,6 @@
 {
   "name": "@jphilipstevens/tslint-base-config",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "main": "tslint.json",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "lint": "npx jsonlint tslint.json -q",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
@@ -28,6 +29,7 @@
     "@semantic-release/github": "^5.0.6",
     "@semantic-release/npm": "^5.0.4",
     "@semantic-release/release-notes-generator": "^7.0.2",
+    "condition-circle": "^2.0.2",
     "cz-conventional-changelog": "^2.1.0",
     "semantic-release": "^15.9.17"
   },
