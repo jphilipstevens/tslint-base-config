@@ -3,5 +3,12 @@
     "tslint:recommended",
     "tslint-eslint-rules",
     "tslint-config-prettier"
-  ]
+  ],
+  "rules": {
+    "interface-name": false,
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "object-literal-sort-keys": false,
+    "no-angle-bracket-type-assertion": false,
+    "array-type": [true, "array-simple"]
+  } 
 }
