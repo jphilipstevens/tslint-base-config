@@ -32,7 +32,7 @@
     "@semantic-release/release-notes-generator": "^7.0.2",
     "condition-circle": "^2.0.2",
     "cz-conventional-changelog": "^2.1.0",
-    "semantic-release": "^15.13.16"
+    "semantic-release": "^17.2.3"
   },
   "peerDependencies": {
     "tslint": "^5.5.0",
